@@ -1,0 +1,37 @@
+{
+    "id": 5744,
+    "name": "Compound Wrapped BTC",
+    "symbol": "CWBTC",
+    "slug": "compound-wrapped-btc",
+    "num_market_pairs": 1,
+    "date_added": "2020-07-24T00:00:00.000Z",
+    "tags": [
+        "defi"
+    ],
+    "max_supply": null,
+    "circulating_supply": 0,
+    "total_supply": 159290,
+    "platform": {
+        "id": 1027,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum",
+        "token_address": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4"
+    },
+    "cmc_rank": 2701,
+    "last_updated": "2021-03-22T03:05:07.000Z",
+    "quote": {
+        "USD": {
+            "price": 1153.6444932387878,
+            "volume_24h": 475110.32293433,
+            "percent_change_1h": 0.64840836,
+            "percent_change_24h": -2.26206977,
+            "percent_change_7d": -4.96994687,
+            "percent_change_30d": 1.76772637,
+            "percent_change_60d": 64.46655459,
+            "percent_change_90d": 150.8677624,
+            "market_cap": 0,
+            "last_updated": "2021-03-22T03:05:07.000Z"
+        }
+    }
+}
