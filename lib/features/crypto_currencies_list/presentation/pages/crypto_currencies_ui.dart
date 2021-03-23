@@ -22,13 +22,9 @@ class _CryptoCurrenciesListViewState extends State<CryptoCurrenciesListView> {
 
 
 void initAppCenter() async{
-
-
   final ios = defaultTargetPlatform == TargetPlatform.iOS;
   var appSecret = ios ? Constants.iosAppSecret : Constants.androidAppSecret;
   await AppCenter.start(appSecret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
-
-
 }
 
   @override
