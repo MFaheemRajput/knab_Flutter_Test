@@ -12,18 +12,8 @@ import 'package:appcenter_analytics/appcenter_analytics.dart';
 import 'package:appcenter_crashes/appcenter_crashes.dart';
 
 
-void initAppCenter() async{
-  final ios = defaultTargetPlatform == TargetPlatform.iOS;
-  var app_secret = ios ? "123cfac9-123b-123a-123f-123273416a48" : "96781fae-f8e4-4114-98c3-51e7c52c8d53";
-
-  await AppCenter.start(app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
-}
 
 void main() async {
-
-  final ios = defaultTargetPlatform == TargetPlatform.iOS;
-  var app_secret = ios ? Constants.iosAppSecret : Constants.androidAppSecret;
-  await AppCenter.start(app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
 
   await init();
   runApp(MyApp());
