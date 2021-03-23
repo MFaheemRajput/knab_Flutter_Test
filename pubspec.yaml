@@ -11,6 +11,12 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  #CI/CD
+  appcenter: ^0.2.1
+  appcenter_crashes: ^0.2.1
+  appcenter_analytics: ^0.2.1
+
+  
   flutter:
     sdk: flutter
   
