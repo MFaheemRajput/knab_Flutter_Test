@@ -32,6 +32,6 @@ jobs:
         contents: '**/*.apk'
         targetFolder: '$(build.artifactStagingDirectory)'
     - task: PublishBuildArtifacts@1
-	inputs:
-        artifactName: 'knab'
+	      inputs:
+          artifactName: 'knab'
 
