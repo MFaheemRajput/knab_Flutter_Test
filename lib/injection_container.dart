@@ -32,7 +32,7 @@ void init() async {
   sl.registerLazySingleton<ForeignCurrencyExchangeRepository>(() => ForeignCurrencyExchangeRepositoryImpl(remoteDataSource: sl(), networkInfo: sl()));
 
   // data source
-  sl.registerLazySingleton<CryptoCurrencyLocalDataSource>(() => CryptoCurrencyLocalDataSourceImpl(database: sl()));
+  sl.registerLazySingleton<CryptoCurrencyLocalDataSource>(() => CryptoCurrencyLocalDataSourceImpl());
   sl.registerLazySingleton<CryptoCurrencyRemoteDataSource>(() => CryptoCurrencyRemoteDataSourceImpl(client: sl()));
   sl.registerLazySingleton<ForeignCurrencyExchangeRemoteDataSource>(() => ForeignCurrencyExchangeRemoteDataSourceImpl(client: sl()));
 
@@ -40,7 +40,7 @@ void init() async {
   sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
 
   //! Core
-  sl.registerLazySingleton<AppDatabase>(() => AppDatabase());
+  //sl.registerLazySingleton<AppDatabase>(() => AppDatabase());
 
   //! External
   sl.registerLazySingleton<Client>(() => Client());

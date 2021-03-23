@@ -21,10 +21,10 @@ dependencies:
     sdk: flutter
   
   #Local database
-  moor: ^4.2.0
-  sqlite3_flutter_libs: ^0.4.0
-  path_provider: ^2.0.1
-  path: ^1.8.0
+  # moor: ^4.2.0
+  # sqlite3_flutter_libs: ^0.4.0
+  # path_provider: ^2.0.1
+  # path: ^1.8.0
 
   #uuid generator
   uuid: ^3.0.1
