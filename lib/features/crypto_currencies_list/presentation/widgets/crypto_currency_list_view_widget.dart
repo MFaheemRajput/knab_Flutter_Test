@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_app/features/crypto_currencies_list/domain/entities/crypto_currency.dart';
+import 'package:my_app/features/crypto_currency_rates/presentation/cubit/crypto_currency_detail_cubit.dart';
 import 'package:my_app/features/crypto_currency_rates/presentation/pages/crypto_currency_detail_ui.dart';
 
 class CryptoCurrencyListView extends StatefulWidget {
@@ -27,9 +29,16 @@ class _CryptoCurrencyListViewState extends State<CryptoCurrencyListView> {
            ),
            onTap: () {
              Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => CryptoCurrencyDetailView()),
-  );
+      context,
+      MaterialPageRoute(
+    
+        builder: (_) => BlocProvider.value(
+          value: BlocProvider.of<CryptoCurrencyDetailCubit>(context),
+          child: CryptoCurrencyDetailView(selectedCryptoCurrency: this.widget.items[index])),
+        ),
+      
+          //builder: (context) => CryptoCurrencyDetailView(selectedCryptoCurrency: this.widget.items[index])),
+        );
            },
          )),
        ),
