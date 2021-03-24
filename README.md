@@ -45,4 +45,17 @@ My focus is on build the flexible and good code structure so it shows how easy t
 4. What was the latest technical book you have read or tech conference you have been to? What did you learn?
     I attended Fosdem Belgium last month. its europe biggest open-source conference. I studied about data security. encryption/decryption for communication based on Bluetooth.
 5. What do you think about this technical assessment?
+
+    Its good Simple and flexible. but should add more languages support.
+
 6. Please, describe yourself using JSON.
+    {
+        "name": "Muhammad Faheem Khan",
+        "age": 32,
+        "status": "Single",
+        "hobbies": ["Cooking", "Cricket", "Teaching", "Photography", "Learning"],
+        "moto": "Help Other",
+        "short_description": "An intellectual who is searching purpose of life",
+        "long_description": "A person who believe. we (humans) have to take the responsibility to make this world a batter place to live. So I am passionate to learn and teach my knowledge and ready to help other humans. I am a software engineer so I am dedicated to use my current skills for my goal. also interested in Philosophy, Marketing, Psychology and Math"
+
+    }
