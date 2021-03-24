@@ -45,27 +45,4 @@ class _CryptoCurrencyDetailViewState extends State<CryptoCurrencyDetailView> {
         ), 
     );
   }
-
-  // custom() {
-  //   return CustomScrollView(
-  //     slivers: <Widget>[
-  //       SliverAppBar(
-  //         expandedHeight: MediaQuery.of(context).size.height * .25,
-  //         floating: false,
-  //         pinned: true,
-  //         flexibleSpace: FlexibleSpaceBar(
-  //           centerTitle: true,
-  //           title: Text(
-  //             this.widget.selectedCryptoCurrency.name,
-  //             style: TextStyle(
-  //               color: Colors.white,
-  //               fontSize: 16.0,
-  //             ),
-  //           ),
-  //         ),
-  //       ),
-  //       CurrencyListView(widget: this.widget)
-  //     ],
-  //   );
-  // }
 }

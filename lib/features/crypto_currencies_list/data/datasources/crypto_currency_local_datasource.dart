@@ -24,9 +24,9 @@ class CryptoCurrencyLocalDataSourceImpl implements CryptoCurrencyLocalDataSource
   // also it is best if create a connection file speratelity.
   // so incase if in future we need to switch the method and technology of local storage to other kind of storage.
   // we can do that without change in datasource layer.
-  final AppDatabase database;
+  //final AppDatabase database;
   // todo replace it with local DB
-  CryptoCurrencyLocalDataSourceImpl({@required this.database});
+  CryptoCurrencyLocalDataSourceImpl();
   
   @override
   Future<List<CryptoCurrencyModel>> getCachedData() {
